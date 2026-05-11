@@ -15,12 +15,12 @@ I have only needed to use these three functions fo rmy own server. If you requir
 3) Download serverbot.py and place the file in your minecraft server's directory
 4) In your terminal run the following commands (installation commands will vary slightly depending on your linux distrobution. The one used here is for Debian):
 ```
-   chmod +x serverbot.sh
-   sudo apt install -y python3 pip
-   pip install discord.py aiohttp
+chmod +x serverbot.sh
+sudo apt install -y python3 pip
+pip install discord.py aiohttp
 ```
 5) Open serverbot.py and follow instructions 1-11 located in ***SETUP VARIABLES***
 6) Manually start your server by running the following command in the directory of your server:
 ```
-   ./serverbot.sh
+./serverbot.sh
 ```
