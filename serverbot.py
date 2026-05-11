@@ -16,41 +16,61 @@ import time
 # BEGINNING OF SETUP VARIABLES
 ##################################################################################################################
 
-# Input ID assigned to server owner's role
-OWNER_ROLE_ID = 1437183305266106558
+    # 1)
+# Change number to your discord server's ID
+GUILD_ID = 123
 
-# Input ID assigned to admin role
-ADMIN_ROLE_ID = 1437182763093463101
+    # 2)
+# Change number to ID assigned to server owner's role
+OWNER_ROLE_ID = 123
 
+    # 3)
+# Change number to ID assigned to admin role
+ADMIN_ROLE_ID = 123
+
+    # 4)
 # Change to false to allow both admin and owner roles to whitelist users
 WHITELISTING_OWNER_ONLY = True
 
+    # 5)
 # Change to false to allow both admin and owner roles to manually start server
 STARTING_OWNER_ONLY = True
 
+    # 6)
 # Change to false to allow both admin and owner roles to manually restart server
 RESTARTING_OWNER_ONLY = True
 
-# Input your discord server's ID
-GUILD_ID = 1437180858367868950
-
-# Change path to your own server's whitelist file
+    # 7)
+# Input absolute path to your server's whitelist file
 WHITELIST_FILE = ""
 
-# Input name of your start.sh file
+    # 8)
+# Input your bot token
+TOKEN = ""
+
+    # 9)
+'''
+1) Create a .sh file that runs the command that starts your server
+2) Open the terminal in your server's directory and run the following command (replace FILE_NAME with the name of your newly created .sh file): 
+    chmod +x FILE_NAME.sh
+'''
+
+    # 10)
+# Input the server starting file name here
 START_FILE = ""
 '''
 # Example of what the inside of your start.sh file should look like (the "#!/bin/bash" line at the top is required for bash to execute the command in the file):
+
+# File name = start.sh
+# File contents:
 
 #!/bin/bash
 java -Xms1G -Xmx6G -jar fabric-server-mc.1.21.10-loader.0.17.3-launcher.1.1.0.jar nogui
 '''
 
-# Input directory that your start.sh file is located in (DO NOT INCLUDE FILE NAME)
+    # 11)
+# Input directory that your .sh file is located in (DO NOT INCLUDE FILE NAME)
 START_DIR = ""
-
-# Input your bot token
-TOKEN = ""
 
 ##################################################################################################################
 # END OF SETUP VARIABLES
